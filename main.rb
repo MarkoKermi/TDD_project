@@ -1,6 +1,5 @@
 require_relative './modules/solver'
 
-def main
-solve = Solver.new
+def main; end
 
-end
+main
