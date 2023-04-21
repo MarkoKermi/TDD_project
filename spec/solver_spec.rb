@@ -1,4 +1,4 @@
-required '../modules/solver'
+require '../solver'
 
 describe Solver do
   before :each do
@@ -10,8 +10,8 @@ describe Solver do
   it 'should return fatorial of 5 to be 120' do
     expect(@solver.factorial(5)).to eq(120)
   end
-  it 'should raise argumental  error if a number is negative ' do
-    expect { @solver.factorial(-1) }.to raise_error(ArgumentError)
+  it 'should raise argumental error if a number is negative ' do
+    expect {@solver.factorial(-1) }.to raise_error(ArgumentError)
   end
   it "should return reverse word of 'hello' to be 'olleh'" do
     expect(@solver.reverse('hello')).to eq('olleh')
@@ -38,4 +38,4 @@ describe Solver do
       expect(solve.fizzbuzz(7)).to eq("7")
     end
   end
-end
+
