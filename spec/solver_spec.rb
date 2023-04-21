@@ -1,4 +1,4 @@
-require_relative '../modules/solver'
+require_relative '../solver'
 
 describe Solver do
   before :each do
